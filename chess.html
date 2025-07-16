@@ -59,10 +59,10 @@
 <script>
 document.getElementById('codeSubmit').onclick = function() {
   var code = document.getElementById('codeInput').value.trim();
-  if (code === 'ABC' || code === 'DEF') {
+  if (code === 'A3B1C4D2' || code === 'A2B4C1D3' || code === 'a3b1c4d2' || code === 'a2b4c1d3') {
     window.open('swimming.html', '_blank');
   } else {
-    alert('Not the right code');
+    alert('Not the right code. The code is in the format of A1B2C3D4.');
   }
 };
 </script>
