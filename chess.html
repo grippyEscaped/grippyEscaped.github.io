@@ -47,15 +47,25 @@
         Here's how it works: You and three of your teammates will become the "queens." 
         Your task is to physically position all four of you onto different squares of a 4x4 subset of this concrete chessboard such that no two "queens" attack each other. 
         Remember the rules of a chess queen: she attacks horizontally, vertically, and diagonally across any number of squares.</p>
-      <a class="link" href="gripping.html" target="_blank">
-        <i class="fa fa-university">&nbsp;</i>We found a valid configuration!
-      </a>
+      <input type="text" id="codeInput" placeholder="Enter code">
+      <button id="codeSubmit">Submit</button>
 
+      <img src="./chessexample.png" alt="Profile Picture">
       
 
 
 </div>
 <script type="text/javascript" src="script.js"></script>
+<script>
+document.getElementById('codeSubmit').onclick = function() {
+  var code = document.getElementById('codeInput').value.trim();
+  if (code === 'ABC' || code === 'DEF') {
+    window.open('swimming.html', '_blank');
+  } else {
+    alert('Not the right code');
+  }
+};
+</script>
 </body>
 
 
